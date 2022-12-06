@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: hsl(36, 100%, 99%);
+    font-family: 'Inter';
+}
+h1 {
+    width: 250px;
+    font-size: 50px;
+    font-weight: 800;
+    margin: 10px 0;
+}
+h2 {
+    color: hsl(35, 77%, 62%);
+    font-size: 38px;
+}
+h3 {
+    font-size: 22px;
+}
+h4{
+    color: hsl(240, 100%, 5%);
+}
+p {
+    font-size: 15px;
+    color: hsl(236, 13%, 42%);
+}
+.content-container {
+    margin: 5%;
+}
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.menu {
+    display: flex;
+}
+.menu-item {
+    padding-left: 5rem;
+}
+.main-content {
+    justify-content: space-between;
+}
+.left-container {
+    width: 70%;
+    margin-right: 25px;
+}
+.left-container img {
+    width: 100%;
+}
+.left-text {
+    justify-content: space-between;
+}
+.middle-content {
+    width: 50%;
+    padding-right: 10px;
+}
+.right-container {
+    min-width: 290px;
+    width: 20%;
+    color: white;
+    background-color: hsl(240, 100%, 5%);
+    padding: 20px 25px;
+}
+.right-container p {
+    color: hsl(233, 8%, 79%);
+}
+.article-section {
+    margin: 70px 0;
+}
+.article-content {
+    width: 33%;
+}
+.article-text {
+    padding: 5px 25px;
+}
+.article-content img {
+    height: 150px;
+    width: auto;
+}
+.article-number {
+    font-size: 20px;
+    color: hsl(233, 8%, 79%);
+}
+
+.primary-button {
+    background-color: hsl(5, 85%, 63%);
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+    width: 145px;
+    height: 45px;
+    font-weight: 700;
+}
+.seperator {
+    border-bottom: 1px solid hsl(233, 8%, 79%);
+    padding-bottom: 25px;
+    margin-bottom: 35px;
+}
+.flex {
+    display: flex;
+}
+.attribution{
+    font-size: 12px;
+    padding: 10px;
+}
