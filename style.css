@@ -1,8 +1,9 @@
 body {
     margin: 0;
-    height: 100vh;
     background-color: hsl(36, 100%, 99%);
     font-family: 'Inter';
+    position: relative;
+    min-height: 100vh;
 }
 h1 {
     width: 250px;
@@ -27,7 +28,10 @@ p {
     color: hsl(236, 13%, 42%);
 }
 .content-container {
-    margin: 5%;
+    padding: 5%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
 }
 .navigation {
     display: flex;
@@ -41,6 +45,7 @@ p {
 .menu-item {
     padding-left: 5rem;
 }
+
 .main-content {
     justify-content: space-between;
 }
@@ -112,10 +117,33 @@ p {
 }
 .attribution{
     font-size: 12px;
-    padding: 10px;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
 }
 
-/* hide mobile images */
+/* styling for active states */
+h3:hover {
+    cursor: pointer;
+    color: hsl(35, 77%, 62%);
+}
+h4:hover {
+    color:hsl(5, 85%, 63%);
+    cursor: pointer;
+}
+.menu-item:hover {
+    color:hsl(5, 85%, 63%);
+    cursor: pointer;
+}
+.primary-button:hover {
+    background-color: hsl(240, 100%, 5%);
+    cursor: pointer;
+}
+
+/* hide mobile images and divs */
+.mobile-navigation {
+    display: none;
+}
 #mobile-menu-icon {
     display: none;
 }
@@ -128,7 +156,27 @@ p {
     h4 {
         margin: 10px 0;
     }
+    .mobile-navigation {
+        width: 70%;
+        height: 100vh;
+        background-color: hsl(36, 100%, 99%);
+        position: absolute;
+        right: 0;
+        z-index: 999;
+    }
     .menu {
+        display: block;
+        margin-top: 100px;
+    }
+    .menu-item {
+        padding: 20px 25px;
+    }
+    #mobile-menu-icon-close {
+        position: absolute;
+        right: 20px;
+        top: 25px;
+    }
+    .navigation .menu{
         display: none;
     }
     .main-content {
@@ -174,6 +222,19 @@ p {
     #desktop-hero-image {
         display: none;
     }
+
+    /* overlay for mobile menu */
+    .darken:before {
+        background: black;
+        content: "";
+        opacity: 0.4;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        }
 }
 /* for Galaxy fold need to shrink article section to fit */
 @media only screen and (max-width: 370px) {
